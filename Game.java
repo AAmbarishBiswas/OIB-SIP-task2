@@ -26,9 +26,7 @@ public class Game extends JFrame {
     private static final int MAX_ROUNDS = 3;
     int totalScore = 0, i = 1;
     int attempts = 0, number = 0;
-	/**
-	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -42,16 +40,14 @@ public class Game extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+	
 	public Game() {
 		
 		 Random random = new Random();
 		
 		 number = random.nextInt(MAX_RANGE) + MIN_RANGE;
          
-		 //System.out.printf("Round %d: Guess the number between %d and %d in %d attempts.\n", i, MIN_RANGE, MAX_RANGE, MAX_ATTEMPTS);
+		 
 		 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 583, 380);
